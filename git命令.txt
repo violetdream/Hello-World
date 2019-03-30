@@ -1,0 +1,29 @@
+create a new repository on the command line
+
+echo "# Hello-World" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/violetdream/Hello-World.git
+git push -u origin master
+
+push an existing repository from the command line
+
+git remote add origin https://github.com/violetdream/Hello-World.git
+git push -u origin master
+
+
+
+git config --global user.name "名字"
+
+git config --global user.email "邮箱地址"
+
+ 配置完成之后可以查看自己的邮箱地址和名字
+
+
+第一种方法：（简单易懂）
+
+1、git add .（后面有一个点，意思是将你本地所有修改了的文件添加到暂存区）
+2、git commit -m""(引号里面是你的介绍，就是你的这次的提交是什么内容，便于你以后查看，这个是将索引的当前内容与描述更改的用户和日志消息一起存储在新的提交中)
+3、git pull origin master 这是下拉代码，将远程最新的代码先跟你本地的代码合并一下，如果确定远程没有更新，可以不用这个，最好是每次都执行以下，完成之后打开代码查看有没有冲突，并解决，如果有冲突解决完成以后再次执行1跟2的操作
+4、git push origin master 将代码推至远程就可以了
