@@ -1,0 +1,23 @@
+create a new repository on the command line
+
+echo "# Hello-World" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/violetdream/Hello-World.git
+git push -u origin master
+
+push an existing repository from the command line
+
+git remote add origin https://github.com/violetdream/Hello-World.git
+git push -u origin master
+
+
+
+git config --global user.name "名字"
+
+git config --global user.email "邮箱地址"
+
+ 配置完成之后可以查看自己的邮箱地址和名字
+
+
